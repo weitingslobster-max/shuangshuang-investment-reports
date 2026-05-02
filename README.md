@@ -1,6 +1,6 @@
 # 雙雙's investment reports
 
-這個 repository 用來整理雙雙為 Weiting 製作的投資研究 HTML 報告。
+這個 repository 用來整理雙雙製作的投資研究 HTML 報告。
 
 ## 內容整理方式
 
