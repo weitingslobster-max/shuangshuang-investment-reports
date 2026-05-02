@@ -1,0 +1,4 @@
+# Local/private workflow notes for 雙雙
+.report-notes.md
+*.tmp
+.DS_Store
