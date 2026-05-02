@@ -3,19 +3,53 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=semiconductors/tsmc/tsmc-investment-report-zh-2026-05-01.html">
   <title>雙雙's investment reports</title>
   <style>
-    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0b1020; color: #e5edf7; font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Segoe UI", sans-serif; }
-    main { max-width: 720px; padding: 32px; text-align: center; }
-    a { color: #38bdf8; }
+    :root { --bg:#0b1020; --panel:#111827; --ink:#e5edf7; --muted:#9fb0c5; --line:#2a3850; --accent:#f97316; --blue:#38bdf8; }
+    * { box-sizing: border-box; }
+    body { margin:0; min-height:100vh; background:radial-gradient(circle at top left,#1e293b 0,#0b1020 42%,#060913 100%); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Segoe UI",sans-serif; line-height:1.65; }
+    main { max-width:960px; margin:0 auto; padding:48px 22px 80px; }
+    header { border:1px solid var(--line); background:rgba(17,24,39,.82); border-radius:28px; padding:34px; margin-bottom:26px; }
+    .eyebrow { color:#fed7aa; letter-spacing:.14em; text-transform:uppercase; font-size:13px; font-weight:700; }
+    h1 { margin:8px 0 10px; font-size:38px; line-height:1.15; }
+    .sub { color:var(--muted); font-size:18px; margin:0; }
+    h2 { margin-top:34px; border-left:5px solid var(--accent); padding-left:12px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; }
+    .card { border:1px solid var(--line); background:rgba(17,24,39,.75); border-radius:20px; padding:20px; text-decoration:none; color:var(--ink); display:block; transition:.15s ease; }
+    .card:hover { transform:translateY(-2px); border-color:var(--blue); }
+    .date { color:#fbbf24; font-weight:700; font-size:14px; }
+    .title { font-size:20px; font-weight:750; margin:8px 0; }
+    .desc { color:var(--muted); margin:0; }
+    .path { color:#93c5fd; font-size:13px; margin-top:12px; word-break:break-all; }
+    footer { margin-top:44px; color:var(--muted); font-size:14px; }
   </style>
 </head>
 <body>
   <main>
-    <h1>雙雙's investment reports</h1>
-    <p>正在前往最新報告：台積電投資展望與美股供應鏈機會。</p>
-    <p><a href="semiconductors/tsmc/tsmc-investment-report-zh-2026-05-01.html">如果沒有自動跳轉，請點這裡開啟報告。</a></p>
+    <header>
+      <div class="eyebrow">Investment Research Library</div>
+      <h1>雙雙's investment reports</h1>
+      <p class="sub">中文投資研究 HTML 報告索引。每份報告用主題資料夾整理，檔名包含日期方便辨識最新版。</p>
+    </header>
+
+    <h2>半導體 / Semiconductors</h2>
+    <section class="grid" aria-label="Semiconductor reports">
+      <a class="card" href="semiconductors/tsmc/tsmc-investment-report-zh-2026-05-01.html">
+        <div class="date">2026-05-01</div>
+        <div class="title">台積電投資展望與美股供應鏈機會</div>
+        <p class="desc">以 TSMC Q1 2026 財報與法說資料為出發點，延伸到 AI/HPC、先進封裝、設備、EDA/IP 與美股配置。</p>
+        <div class="path">semiconductors/tsmc/</div>
+      </a>
+
+      <a class="card" href="semiconductors/cpu/cpu-opportunities-report-zh-2026-05-01.html">
+        <div class="date">2026-05-01</div>
+        <div class="title">CPU 投資機會研究：AMD vs Intel vs Arm</div>
+        <p class="desc">比較 CPU 相關投資機會與風險，整理 AMD、Intel、Arm 等標的的定位與投資觀點。</p>
+        <div class="path">semiconductors/cpu/</div>
+      </a>
+    </section>
+
+    <footer>Generated and maintained by 雙雙 🦞🌱</footer>
   </main>
 </body>
 </html>
