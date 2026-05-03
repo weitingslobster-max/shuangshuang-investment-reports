@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CPU Sector 投資研究：AMD、Intel、Arm 與供應鏈定位</title>
+  <style>
+    :root{--bg:#08111f;--panel:#111827;--panel2:#172033;--ink:#e8eefc;--muted:#a8b3cf;--line:#2c3a59;--accent:#7dd3fc;--orange:#fb923c;--green:#86efac;--yellow:#fde68a;--red:#fca5a5;--blue:#93c5fd}
+    *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at top left,#1e3a5f 0,#08111f 42%,#030712 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Segoe UI",Arial,sans-serif;line-height:1.7}
+    main{max-width:1180px;margin:auto;padding:42px 22px 82px} header{border:1px solid var(--line);background:rgba(17,24,39,.86);border-radius:28px;padding:32px;margin-bottom:24px;box-shadow:0 18px 50px rgba(0,0,0,.32)}
+    .eyebrow{color:#fed7aa;letter-spacing:.14em;text-transform:uppercase;font-size:13px;font-weight:800} h1{font-size:38px;line-height:1.14;margin:8px 0 10px} .sub{color:var(--muted);font-size:17px;margin:0}.small{font-size:13px;color:var(--muted)}
+    h2{margin-top:36px;border-left:5px solid var(--orange);padding-left:12px} h3{color:#fff;margin-bottom:6px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}.card{background:rgba(17,24,39,.82);border:1px solid var(--line);border-radius:20px;padding:18px}.card h3{color:var(--accent);font-size:24px;margin-top:0}.tag{display:inline-block;border-radius:999px;padding:4px 10px;font-weight:800;font-size:13px;margin:4px 0 10px}.core{background:#064e3b;color:#bbf7d0}.watch{background:#1e3a8a;color:#bfdbfe}.sat{background:#4a2d05;color:#fde68a}.turn{background:#3b1a1a;color:#fecaca}.wait{background:#3b2f08;color:#fde68a}
+    table{width:100%;border-collapse:collapse;background:rgba(17,24,39,.8);border-radius:16px;overflow:hidden;margin:16px 0} th,td{border:1px solid var(--line);padding:12px;vertical-align:top} th{background:#1f2b46;text-align:left;color:#fff} td:first-child{font-weight:800;color:var(--blue)}
+    .callout{background:#10251d;border-left:5px solid var(--green);padding:16px 18px;border-radius:12px;margin:18px 0}.warn{background:#2d240f;border-left-color:var(--yellow)}.risk{background:#2a1518;border-left-color:var(--red)}
+    a{color:#93c5fd}.sources li{margin-bottom:8px} footer{margin-top:42px;color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body><main>
+<header>
+  <div class="eyebrow">CPU Sector Research · 2026-05-02 PDT</div>
+  <h1>CPU Sector 投資研究：AMD、Intel、Arm 與供應鏈定位</h1>
+  <p class="sub">聚焦資料中心 CPU、PC CPU、Arm IP、hyperscaler 自研 CPU、AI host CPU，以及 TSMC / NVIDIA / Qualcomm 等延伸標的。這是研究輔助，不是個人化投資建議。</p>
+  <p class="small">研究流程測試：本報告使用 sub-agent 蒐集產業/供應鏈資料；公司面與風險估值由主流程補完並整合。</p>
+</header>
+
+<section class="callout">
+  <b>一句話結論：</b>CPU sector 不是被 GPU 消滅的夕陽產業，而是從「單純 x86 PC/server」轉成「AI 系統 host CPU + Arm/custom silicon + 先進製程供應鏈」的重組期。若只選直接 CPU 曝險，<b>AMD 是最乾淨的成長標的</b>；<b>Arm 是最好的平台模型但估值容錯低</b>；<b>Intel 是 turnaround / foundry optionality，不是高確定性 compounder</b>。TSMC 則是整個 CPU/AI compute supply chain 的最核心瓶頸資產。</section>
+
+<h2>投資結論 / Recommendation</h2>
+<div class="grid">
+  <div class="card"><h3>AMD</h3><span class="tag core">核心 / core holding</span><p>AMD 是最直接、最乾淨的 merchant CPU 成長曝險。EPYC server CPU、Ryzen client CPU 仍在拿市占，且 AI 伺服器也需要 host CPU。不過股價已大幅反映 AI 與 data-center 樂觀預期，適合分批而非一次追滿。</p></div>
+  <div class="card"><h3>Arm</h3><span class="tag watch">優先研究 / priority watchlist</span><p>Arm 是 CPU 架構轉移的 royalty / IP 平台，能同時受惠 Apple、Qualcomm、NVIDIA Grace/Vera、hyperscaler custom CPUs。但高品質已被高估值反映，適合小部位或等待明顯回檔。</p></div>
+  <div class="card"><h3>Intel</h3><span class="tag turn">週期反轉 / cyclical turnaround</span><p>Intel 仍有龐大 x86 installed base 與美國本土製造戰略價值，但 foundry 虧損、18A/14A execution、資本支出與現金流是核心風險。若股價已因 turnaround 預期大漲，不宜追高。</p></div>
+  <div class="card"><h3>TSMC</h3><span class="tag core">供應鏈核心 / manufacturing bottleneck</span><p>TSMC 不是 CPU 設計公司，但它是 AMD、Apple、Qualcomm、NVIDIA 與大量 Arm/custom CPU 的先進製程瓶頸。若想要較少單一產品風險的 compute infrastructure 曝險，TSMC 仍是核心。</p></div>
+</div>
+
+<h2>分類確認 / 這個 sector 到底是什麼？</h2>
+<table><thead><tr><th>分類</th><th>代表標的</th><th>投資含義</th></tr></thead><tbody>
+<tr><td>核心 CPU 設計 / IP</td><td>AMD、Intel、Arm</td><td>AMD/Intel 是 x86 merchant CPU；Arm 是 CPU architecture/IP platform，不直接賣傳統 CPU，但 royalty 模型橫跨更多終端。</td></tr>
+<tr><td>資料中心系統架構</td><td>NVIDIA Grace/Vera、hyperscaler custom CPUs</td><td>AI 系統需要 GPU/ASIC，也需要 CPU host、memory coherence、network/storage orchestration；部分 x86 sockets 會被 Arm/custom silicon 取代。</td></tr>
+<tr><td>PC / edge CPU</td><td>Intel Core、AMD Ryzen、Apple M-series、Qualcomm Snapdragon X</td><td>PC 是成熟且週期性市場，但 Windows-on-Arm 與 AI PC 讓架構競爭重新打開。</td></tr>
+<tr><td>製造瓶頸</td><td>TSMC、Intel Foundry、Samsung Foundry</td><td>先進製程與先進封裝決定 performance-per-watt。TSMC 目前最強；Intel Foundry 是高風險選擇權。</td></tr>
+</tbody></table>
+
+<h2>近期財務 snapshot</h2>
+<table><thead><tr><th>公司</th><th>最新財務重點</th><th>解讀</th></tr></thead><tbody>
+<tr><td>AMD</td><td>FY2025 revenue $34.6B，年增 34%；Data Center $16.6B，年增 32%；Client $10.6B，年增 51%。</td><td>CPU 與 AI accelerator 都在推動 data center；需避免把 Data Center 全部誤認為 CPU，但 EPYC/Ryzen 動能明確。</td></tr>
+<tr><td>Intel</td><td>FY2025 revenue $52.9B，約持平；CCG $32.2B，年減 3%；DCAI $16.9B，年增 5%；Foundry $17.8B，年增 3%，但 foundry operating loss 仍約 $10.3B。</td><td>營收基底仍大，但利潤與資本配置壓力大。CPU 需求改善不足以自動修復 foundry economics。</td></tr>
+<tr><td>Arm</td><td>Q3 FYE26 revenue $1.24B，年增 26%；royalty $737M，年增 27%；CSS licenses 已達 21 個、12 家公司。</td><td>royalty 飛輪健康，Arm 在 data center / edge / custom silicon 的含金量提高。</td></tr>
+<tr><td>TSMC</td><td>Q1 2026 revenue US$35.90B；gross margin 66.2%；Q2 guide revenue US$39.0B–40.2B、gross margin 65.5%–67.5%。</td><td>AI/HPC 與先進製程需求非常強；CPU winners 多數仍繞不開 TSMC。</td></tr>
+<tr><td>Qualcomm</td><td>Q2 FY2026 revenue $10.6B；QCT auto + IoT 年增 20%；custom silicon engagement 預計 2026 calendar year 後段開始出貨。</td><td>不是純 CPU 標的，但 Windows-on-Arm、edge AI 與 custom silicon 讓它成為 CPU sector 的延伸選項。</td></tr>
+</tbody></table>
+
+<h2>產業定位與供應鏈關聯</h2>
+<ul>
+  <li><b>x86 還沒死：</b>enterprise software compatibility、PC installed base、server fleet inertia 仍支持 Intel/AMD。</li>
+  <li><b>Arm 正在侵蝕邊界：</b>Apple 已證明 Arm 可以做 premium client computing；AWS/Google/Microsoft/NVIDIA/Qualcomm 則把 Arm 推進 cloud、AI system 與 Windows PC。</li>
+  <li><b>CPU 角色改變：</b>在 AI data center 裡，CPU 不再是唯一主角，但仍是 host、control plane、storage/networking、inference orchestration 的必要元件。</li>
+  <li><b>TSMC 是最大共同分母：</b>AMD、Apple、Qualcomm、NVIDIA 與大量 Arm-based custom silicon 都依賴先進製程與封裝；這讓 TSMC 的地位比單一 CPU 公司更穩。</li>
+</ul>
+
+<h2>個股比較 / segment analysis</h2>
+<table><thead><tr><th>標的</th><th>CPU 曝險純度</th><th>優勢</th><th>主要弱點</th><th>投資角色</th></tr></thead><tbody>
+<tr><td>AMD</td><td>高</td><td>fabless、TSMC 製程、EPYC/Ryzen share gain、AI server host attach</td><td>估值高；Data Center 混合 GPU/CPU，CPU-only 貢獻需拆解；與 NVIDIA/Intel/Arm 生態競爭</td><td>CPU basket 核心</td></tr>
+<tr><td>Intel</td><td>高</td><td>x86 installed base、企業關係、PC/server scale、美國製造戰略價值</td><td>foundry 虧損、資本支出、製程執行、自由現金流與稀釋風險</td><td>turnaround optionality</td></tr>
+<tr><td>Arm</td><td>高但間接</td><td>royalty 模型、低資本強度、跨客戶平台、custom silicon 趨勢</td><td>估值昂貴；license lumpiness；大客戶議價與商業模式變動風險</td><td>高品質 watchlist / 小部位</td></tr>
+<tr><td>TSMC</td><td>中，供應鏈核心</td><td>先進製程/封裝瓶頸、HPC revenue 強、跨 CPU/GPU/ASIC winners</td><td>地緣政治、capex、客戶集中與景氣循環</td><td>compute infrastructure 核心</td></tr>
+<tr><td>NVIDIA</td><td>中低，系統架構關鍵</td><td>Grace/Vera + GPU coupling、AI system control point</td><td>CPU 曝險不是主要投資 thesis；GPU cycle/competition 影響更大</td><td>AI platform 延伸，不是純 CPU</td></tr>
+<tr><td>Qualcomm</td><td>中低，PC/edge optionality</td><td>Snapdragon X、Oryon CPU、edge AI、custom silicon</td><td>Windows-on-Arm adoption 未確定；手機仍是主體</td><td>衛星小部位</td></tr>
+</tbody></table>
+
+<h2>估值紀律 / Valuation discipline</h2>
+<div class="callout warn">
+  <b>不要把「好趨勢」直接等同「好買點」。</b> AMD 與 Arm 的品質/成長性較清楚，但估值通常也最貴；Intel 便宜感來自不確定性，不是免費午餐。
+</div>
+<ul>
+  <li><b>AMD：</b>若市場已用 AI/data-center 高成長定價，適合用分批、回檔、財報後再評估，而不是在大漲後追價。</li>
+  <li><b>Arm：</b>可接受 premium multiple，但需要 royalty growth、CSS adoption 與 data-center traction 持續證明；估值過高時只適合小部位。</li>
+  <li><b>Intel：</b>加碼前應看到 foundry operating loss 收斂、18A/14A 客戶採用、現金流改善，而不只是營收反彈。</li>
+  <li><b>TSMC：</b>可用作 CPU/AI compute 的基礎持股，但仍需留意地緣政治與 capex cycle。</li>
+</ul>
+
+<h2>加碼策略或 portfolio role</h2>
+<table><thead><tr><th>策略</th><th>示例配置</th><th>適合情境</th></tr></thead><tbody>
+<tr><td>直接 CPU basket</td><td>AMD 45%、Arm 20%、Intel 10%、TSMC 20%、現金 5%</td><td>想明確押 CPU 架構重組，但仍降低 Intel turnaround 與 Arm 估值風險。</td></tr>
+<tr><td>保守 compute infrastructure</td><td>TSMC 40%、AMD 25%、Arm 15%、NVIDIA/ETF 15%、現金 5%</td><td>想參與 AI/CPU/ASIC 共同需求，不想押單一 CPU winner。</td></tr>
+<tr><td>高風險反轉</td><td>Intel 20% 以內 + 其餘 AMD/TSMC/現金</td><td>只在能承受 foundry failure / dilution / execution risk 時使用。</td></tr>
+</tbody></table>
+
+<h2>美股延伸標的</h2>
+<ul>
+  <li><b>NVDA：</b>Grace/Vera 讓 NVIDIA 在 CPU system architecture 有存在感，但投資 thesis 仍以 AI accelerator/platform 為主。</li>
+  <li><b>QCOM：</b>Windows-on-Arm 與 custom silicon 是 option value；需追蹤 OEM adoption、software compatibility、PC unit share。</li>
+  <li><b>AAPL：</b>Apple silicon 是 Arm premium client proof point，但 CPU 曝險是內部產品能力，不是 merchant CPU 收入。</li>
+  <li><b>AMZN / GOOGL / MSFT：</b>custom Arm CPUs 會影響 Intel/AMD TAM，但投資曝險被雲端/廣告/軟體大業務稀釋。</li>
+</ul>
+
+<h2>風險 register</h2>
+<div class="callout risk">
+  <b>最需要防的錯誤：</b>把 AI compute 成長全部自動分配給 CPU 股。AI capex 的大頭仍可能流向 GPU、ASIC、HBM、networking、power/cooling；CPU 受益是真實但不一定最大。
+</div>
+<table><thead><tr><th>風險</th><th>影響</th><th>監控指標</th></tr></thead><tbody>
+<tr><td>CPU attach value 被壓縮</td><td>AI server 採購偏 GPU/ASIC，CPU ASP 或 margin 被壓縮</td><td>AMD EPYC ASP / unit commentary、Intel DCAI margin、NVIDIA Grace adoption</td></tr>
+<tr><td>Arm/custom CPU 替代 x86</td><td>Intel/AMD server TAM 被 hyperscaler 內製侵蝕</td><td>AWS Graviton、Google Axion、Microsoft Cobalt、NVIDIA Vera 採用</td></tr>
+<tr><td>Intel foundry execution</td><td>turnaround thesis 失敗、現金流承壓</td><td>18A yield、外部客戶、Foundry operating loss、capex/FCF</td></tr>
+<tr><td>估值壓縮</td><td>AMD/Arm 高 multiple 在利率或成長放緩時快速下修</td><td>forward P/E、P/S、財測 revision、財報後股價反應</td></tr>
+<tr><td>地緣政治與供應鏈</td><td>TSMC/先進封裝/中國銷售限制影響整個 basket</td><td>出口管制、台海風險、先進封裝產能、客戶集中度</td></tr>
+</tbody></table>
+
+<h2>Quarterly monitoring dashboard</h2>
+<ul>
+  <li><b>AMD：</b>Data Center CPU vs GPU 拆解、EPYC share gain、Client margin、MI/Helios 對 CPU platform attach 的帶動。</li>
+  <li><b>Intel：</b>DCAI growth、CCG pricing、Foundry operating loss、18A/14A milestones、外部 foundry 客戶與現金流。</li>
+  <li><b>Arm：</b>royalty growth、license volatility、CSS adoption、Neoverse/data-center share、客戶是否繞開或重新談判商業模式。</li>
+  <li><b>TSMC：</b>HPC revenue mix、3nm/2nm ramp、CoWoS/advanced packaging、gross margin guide。</li>
+  <li><b>Qualcomm / NVIDIA：</b>Windows-on-Arm PC adoption、custom silicon shipment、Grace/Vera design wins。</li>
+</ul>
+
+<h2>資料來源 / Sources</h2>
+<ul class="sources">
+  <li><a href="https://ir.amd.com/news-events/press-releases/detail/1276/amd-reports-fourth-quarter-and-full-year-2025-financial-results">AMD Q4 and FY2025 financial results</a></li>
+  <li><a href="https://www.intc.com/news-events/press-releases/detail/1759/intel-reports-fourth-quarter-and-full-year-2025-financial">Intel Q4 and FY2025 financial results</a></li>
+  <li><a href="https://newsroom.arm.com/news/arm-q3-fye26-results">Arm Q3 FYE26 results</a></li>
+  <li><a href="https://investor.tsmc.com/english/quarterly-results/2026/q1">TSMC Q1 2026 results</a></li>
+  <li><a href="https://www.qualcomm.com/news/releases/2026/04/qualcomm-announces-second-quarter-fiscal-2026-results">Qualcomm Q2 FY2026 results</a></li>
+  <li><a href="https://www.qualcomm.com/news/releases/2025/11/qualcomm-announces-fourth-quarter-and-fiscal-2025-results">Qualcomm FY2025 results</a></li>
+  <li><a href="https://www.nvidia.com/en-us/data-center/grace-cpu-superchip/">NVIDIA Grace CPU Superchip</a> / <a href="https://docs.nvidia.com/dccpu/index.html">NVIDIA Grace documentation</a></li>
+  <li><a href="https://www.investopedia.com/how-much-is-amd-stock-expected-to-move-after-earnings-q1-fy2026-11962852">Investopedia AMD earnings/stock context, May 2026</a></li>
+  <li><a href="https://stockanalysis.com/stocks/arm/">StockAnalysis ARM valuation snapshot</a>；<a href="https://stockanalysis.com/stocks/nvda/">StockAnalysis NVDA valuation snapshot</a></li>
+</ul>
+<footer>Generated and maintained by 雙雙 🦞🌱 · 非個人化投資建議；請搭配自身風險承受度與部位管理。</footer>
+</main></body></html>
